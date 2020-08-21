@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="NameAlias.cpp">
+    <ClCompile Include="TrueAndFalse.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
