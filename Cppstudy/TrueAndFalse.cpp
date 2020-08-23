@@ -21,5 +21,6 @@ int main(void)
 	cout << "sizeof 0 : " << sizeof(0) << endl;
 	cout << "sizeof true: " << sizeof(true) << endl;
 	cout << "sizeof false: " << sizeof(false) << endl;
-	return 0;
+	cout << "modi" << endl;
+	return 0; 
 }
