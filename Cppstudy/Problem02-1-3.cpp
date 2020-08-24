@@ -10,14 +10,12 @@ void SwapPointer(int* ptr1, int* ptr2)
 }
 */
 
-
 void SwapPointer(int* (&pref1), int* (&pref2))
 {
 	int* ptr = pref1;
 	pref1 = pref2;
 	pref2 = ptr;
 }
-
 
 int main(void)
 {
