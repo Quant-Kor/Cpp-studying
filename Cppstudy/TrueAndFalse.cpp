@@ -7,7 +7,7 @@ int main(void)
 	int i = 0;
 
 	cout << "true: " << true << endl;
-	cout << "false: " << true << endl;
+	cout << "false: " << false << endl;
 
 	while (true)
 	{
