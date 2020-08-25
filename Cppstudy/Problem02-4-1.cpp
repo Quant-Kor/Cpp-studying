@@ -18,6 +18,9 @@ int main(void)
 
 	cout << i << endl;
 	cout << str3 << endl;
-	cout << strcmp(str3, str4) << endl;
+	if ((strcmp(str3, str4)) == 0)
+		cout << "문자열 같다" << endl;
+	else
+		cout << "문자열 다르다" << endl;
 	return 0;
 }
