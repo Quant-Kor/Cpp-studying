@@ -19,11 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Problem03-2-2.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Problem03-2-2.cpp" />
-    <ClCompile Include="Problem03-2-2Main.cpp" />
+    <ClCompile Include="FruitSaleSim1.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
