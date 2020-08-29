@@ -19,11 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CarInline.cpp" />
-    <ClCompile Include="RacingInlineMain.cpp" />
+    <ClInclude Include="Problem03-2-1.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CarInline.h" />
+    <ClCompile Include="Problem03-2-1.cpp" />
+    <ClCompile Include="Problem03-2-1Main.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
