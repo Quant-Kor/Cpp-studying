@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="RacingCarFuncAdd.cpp">
+    <ClCompile Include="Problem03-1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
