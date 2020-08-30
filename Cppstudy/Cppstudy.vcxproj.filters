@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="FruitSaleSim1.cpp">
+    <ClCompile Include="RectangleFault.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
