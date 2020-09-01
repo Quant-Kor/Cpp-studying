@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Encaps2.cpp">
+    <ClCompile Include="Problem04-2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
