@@ -19,13 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Point_Constructor.h" />
-    <ClInclude Include="Rectangle_Constructor.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Point_Constructor.cpp" />
-    <ClCompile Include="RectangleConstructor.cpp" />
-    <ClCompile Include="Rectangle_Constructor.cpp" />
+    <ClCompile Include="FruitSaleSim3.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
