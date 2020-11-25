@@ -30,7 +30,7 @@ private:
 	int radius;
 	Point pos;
 public:
-	Circle(int x, int y, int rad) :Point(int x, int y)
+	Circle(int x, int y, int rad) :pos(x, y)
 	{
 		//empty space
 	}
