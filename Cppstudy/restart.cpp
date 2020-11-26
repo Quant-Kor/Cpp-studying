@@ -1,21 +1,26 @@
 #include <iostream>
-
+#include <string.h>
 using namespace std;
 
-void SwapByRef2(int& ref1, int& ref2)
+class Simple
 {
-	int temp = ref1;
-	ref1 = ref2;
-	ref2 = temp;
-}
+public:
+	Simple()
+	{
+		cout << "I'm simple constructor!" << endl;
+	}
+};
 
 int main(void)
 {
-	int val1 = 10;
-	int val2 = 20;
+	cout << "case 1: ";
+	Simple* sp1 = new Simple;
 
-	SwapByRef2(val1, val2);
-	cout << "val1: " << val1 << endl;
-	cout << "val2: " << val2 << endl;
+	cout << "case 2: ";
+	Simple* sp2 = (Simple*)malloc(sizeof(Simple) * 1);
+
+	cout << endl << "end of main" << endl;
+	delete sp1;
+	free(sp2);
 	return 0;
 }
