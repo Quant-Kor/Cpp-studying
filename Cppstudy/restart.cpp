@@ -1,50 +1,79 @@
 #include <iostream>
+#include <cstring>
 using namespace std;
 
-class SinivelCap
+namespace COMP_POS
 {
-public:
-	void Take() const { cout << "콧물이 싹~ 납니다." << endl; }
-};
+	enum
+	{
+		CLERK,
+		SENIOR,
+		ASSIST,
+		MANAGER
+	};
+	void ShowPositioninfo(int pos)
+	{
+		switch (pos)
+		{
+		case CLERK:
+			cout << "사원" << endl;
+			break;
+		case SENIOR:
+			cout << "주임" << endl;
+			break;
+		case ASSIST:
+			cout << "대리" << endl;
+			break;
+		case MANAGER:
+			cout << "과장" << endl;
+		}
+	}
+}
 
-class SneezeCap
-{
-public:
-	void Take() const { cout << "재채기가 멎습니다." << endl; }
-};
-
-class SnuffleCap
-{
-public:
-	void Take() const { cout << "코가 뻥 뚫립니다." << endl; }
-};
-
-class CONTAC600
+class NameCard
 {
 private:
-	SinivelCap sin;
-	SneezeCap sne;
-	SnuffleCap snu;
+	char* name;
+	char* compname;
+	char* callnum;
+	int memnum;
 
 public:
-	void Take() const
+	NameCard(const char* aname, const char* acompname, const char* acallnum, int amemnum)
 	{
-		sin.Take();
-		sne.Take();
-		snu.Take();
+		name = new char[strlen(aname) + 1];
+		compname = new char[strlen(acompname) + 1];
+		callnum = new char[strlen(acallnum) + 1];
+		strcpy(name, aname);
+		strcpy(compname, acompname);
+		strcpy(callnum, acallnum);
+		memnum = amemnum;
+	}
+	void ShowNameCardInfo();
+	~NameCard()
+	{
+		delete[]name;
+		delete[]compname;
+		delete[]callnum;
 	}
 };
 
-class ColdPatient
+void NameCard::ShowNameCardInfo()
 {
-public:
-	void TakeCONTAC600(const CONTAC600& cap) const { cap.Take(); }
-};
+	cout << "이름: " << name << endl;
+	cout << "회사: " << compname << endl;
+	cout << "전화번호: " << callnum << endl;
+	cout << "직급: "; COMP_POS::ShowPositioninfo(memnum);
+	cout << endl;
+}
 
 int main(void)
 {
-	CONTAC600 cap;
-	ColdPatient sufferer;
-	sufferer.TakeCONTAC600(cap);
+	NameCard manClerk("Lee", "ABCEng", "010-1111-2222", COMP_POS::CLERK);
+	NameCard manSENIOR("Hong", "OrangeEng", "010-3333-4444", COMP_POS::SENIOR);
+	NameCard manAssist("Kim", "SoGoodComp", "010-5555-6666", COMP_POS::ASSIST);
+	manClerk.ShowNameCardInfo();
+	manSENIOR.ShowNameCardInfo();
+	manAssist.ShowNameCardInfo();
 	return 0;
 }
