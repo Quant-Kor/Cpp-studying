@@ -1,67 +1,50 @@
 #include <iostream>
 using namespace std;
 
-class Calculator {
-
-private:
-	int plus;
-	int minus;
-	int mul;
-	int div;
+class SinivelCap
+{
 public:
-	void Init();
-	void ShowOpCount();
-	double Add(double x, double y);
-	double Min(double x, double y);
-	double Mul(double x, double y);
-	double Div(double x, double y);
+	void Take() const { cout << "Äà¹°ÀÌ ½Ï~ ³³´Ï´Ù." << endl; }
 };
 
-void Calculator::Init()
+class SneezeCap
 {
-	plus = 0;
-	minus = 0;
-	mul = 0;
-	div = 0;
-}
+public:
+	void Take() const { cout << "ÀçÃ¤±â°¡ ¸Ü½À´Ï´Ù." << endl; }
+};
 
-void Calculator::ShowOpCount()
+class SnuffleCap
 {
-	cout << "µ¡¼À: " << plus << " »¬¼À: " << minus << " °ö¼À: " << mul << " ³ª´°¼À: " << div << endl;
-}
+public:
+	void Take() const { cout << "ÄÚ°¡ »½ ¶Õ¸³´Ï´Ù." << endl; }
+};
 
-double Calculator::Add(double x, double y)
+class CONTAC600
 {
-	plus++;
-	return x + y;
-}
+private:
+	SinivelCap sin;
+	SneezeCap sne;
+	SnuffleCap snu;
 
-double Calculator::Min(double x, double y)
-{
-	minus++;
-	return x - y;
-}
+public:
+	void Take() const
+	{
+		sin.Take();
+		sne.Take();
+		snu.Take();
+	}
+};
 
-double Calculator::Mul(double x, double y)
+class ColdPatient
 {
-	mul++;
-	return x * y;
-}
-
-double Calculator::Div(double x, double y)
-{
-	div++;
-	return x / y;
-}
+public:
+	void TakeCONTAC600(const CONTAC600& cap) const { cap.Take(); }
+};
 
 int main(void)
 {
-	Calculator cal;
-	cal.Init();
-	cout << "3.2 + 2.4 = " << cal.Add(3.2, 2.4) << endl;
-	cout << "3.5 / 1.7 = " << cal.Div(3.5, 1.7) << endl;
-	cout << "2.2 - 1.5 = " << cal.Min(2.2, 1.5) << endl;
-	cout << "4.9 / 1.2 = " << cal.Div(4.9, 1.2) << endl;
-	cal.ShowOpCount();
+	CONTAC600 cap;
+	ColdPatient sufferer;
+	sufferer.TakeCONTAC600(cap);
 	return 0;
 }
