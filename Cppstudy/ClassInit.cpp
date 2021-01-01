@@ -24,6 +24,7 @@ public:
 	}
 }; 
 
+
 int main(void)
 {
 	SoSimple sim1(15, 30);
