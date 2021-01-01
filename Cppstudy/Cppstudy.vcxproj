@@ -19,8 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="SelfRef.cpp" />
-    <ClCompile Include="UsefulThisPtr.cpp" />
+    <ClCompile Include="ClassInit.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

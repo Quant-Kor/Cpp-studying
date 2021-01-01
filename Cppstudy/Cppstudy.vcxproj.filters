@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="SelfRef.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="UsefulThisPtr.cpp">
+    <ClCompile Include="ClassInit.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
