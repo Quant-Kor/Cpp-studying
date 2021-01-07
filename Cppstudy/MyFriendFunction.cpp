@@ -12,7 +12,6 @@ public:
 	{
 
 	}
-
 	Point PointAdd(const Point&, const Point&);
 	Point Pointsub(const Point&, const Point&);
 	~PointOP()
