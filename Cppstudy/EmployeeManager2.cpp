@@ -39,7 +39,7 @@ public:
 class EmployeeHandler
 {
 private:
-	PermanentWorker* empList[50];
+	Employee* empList[50];
 	int empNum;
 public:
 	EmployeeHandler() : empNum(0)
