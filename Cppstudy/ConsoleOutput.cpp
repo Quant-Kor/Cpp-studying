@@ -40,8 +40,8 @@ namespace mystd
 
 int main(void)
 {
-	using mystd::cout;
-	using mystd::endl;
+	using std::cout;
+	using std::endl;
 
 	cout << "Simple String";
 	cout << endl;
