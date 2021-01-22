@@ -19,12 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ArrayTemplate.h" />
-    <ClInclude Include="tPoint.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="BoundArrayMain.cpp" />
-    <ClCompile Include="tPoint.cpp" />
+    <ClCompile Include="ClassTemplateSpecialization.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
