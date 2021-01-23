@@ -1,9 +1,2 @@
-﻿  ClassTemplateSpecialization.cpp
-C:\Users\dlwoa\source\repos\Cppstudy\Cppstudy\ClassTemplateSpecialization.cpp(26,1): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
-C:\Users\dlwoa\source\repos\Cppstudy\Cppstudy\ClassTemplateSpecialization.cpp(33): message : 컴파일되는 클래스 템플릿 인스턴스화 'SimpleDataWrapper<T>'에 대한 참조를 확인하세요.
-C:\Users\dlwoa\source\repos\Cppstudy\Cppstudy\ClassTemplateSpecialization.cpp(26,1): warning C4183: 'SimipleDataWrapper': 반환 형식이 없습니다. 'int'를 반환하는 멤버 함수로 간주됩니다.
-C:\Users\dlwoa\source\repos\Cppstudy\Cppstudy\ClassTemplateSpecialization.cpp(28,1): warning C4183: 'SimipleDataWrapper': 반환 형식이 없습니다. 'int'를 반환하는 멤버 함수로 간주됩니다.
-C:\Users\dlwoa\source\repos\Cppstudy\Cppstudy\ClassTemplateSpecialization.cpp(73,35): error C2664: 'SimpleDataWrapper<int>::SimpleDataWrapper(const SimpleDataWrapper<int> &)': 인수 1을(를) 'int'에서 'const SimpleDataWrapper<int> &'(으)로 변환할 수 없습니다.
-C:\Users\dlwoa\source\repos\Cppstudy\Cppstudy\ClassTemplateSpecialization.cpp(73,35): message : 원인: 'int'에서 'const SimpleDataWrapper<int>'(으)로 변환할 수 없습니다.
-C:\Users\dlwoa\source\repos\Cppstudy\Cppstudy\ClassTemplateSpecialization.cpp(73,35): message : 소스 형식을 가져올 수 있는 생성자가 없거나 생성자 오버로드 확인이 모호합니다.
-C:\Users\dlwoa\source\repos\Cppstudy\Cppstudy\ClassTemplateSpecialization.cpp(33,1): message : 'SimpleDataWrapper<int>::SimpleDataWrapper' 선언을 참조하십시오.
+﻿  ClassTemplateStaticMem.cpp
+  Cppstudy.vcxproj -> C:\Users\dlwoa\source\repos\Cppstudy\Debug\Cppstudy.exe
