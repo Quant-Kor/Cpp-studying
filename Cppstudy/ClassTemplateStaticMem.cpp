@@ -14,6 +14,9 @@ public:
 template <typename T>
 T SimpleStaticMem<T>::mem = 0; // static 멤버의 초기화 문장
 
+template <>
+long SimpleStaticMem<long>::mem = 5;
+
 int main(void)
 {
 	SimpleStaticMem<int> obj1;
