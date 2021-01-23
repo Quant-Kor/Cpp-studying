@@ -1,2 +1,4 @@
-﻿  ClassTemplateStaticMem.cpp
+﻿  ReThrow.cpp
+C:\Users\dlwoa\source\repos\Cppstudy\Cppstudy\ReThrow.cpp(13,13): warning C4101: 'expn' :참조되지 않은 지역 변수입니다.
+C:\Users\dlwoa\source\repos\Cppstudy\Cppstudy\ReThrow.cpp(27,13): warning C4101: 'expn' :참조되지 않은 지역 변수입니다.
   Cppstudy.vcxproj -> C:\Users\dlwoa\source\repos\Cppstudy\Debug\Cppstudy.exe

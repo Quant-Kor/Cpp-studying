@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ClassTemplateStaticMem.cpp">
+    <ClCompile Include="ReThrow.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
